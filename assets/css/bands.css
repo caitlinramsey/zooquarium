@@ -43,8 +43,9 @@
 #filter-categories {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
-.filter-labels {
-    margin-bottom: 1rem;
+#band-card {
+    margin-left: 1rem;
 }

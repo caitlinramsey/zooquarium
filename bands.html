@@ -21,29 +21,42 @@
     <main>
 
         <section id='filter-categories'>
-            <input type='checkbox' id='venue' name='categories' value='Venue'>
-            <input type='checkbox' id='genre' name='categories' value='Genre'>
-            <input type='checkbox' id='date' name='categories' value='Date'>
-            <input type='checkbox' id='time' name='categories' value='Time'>
-            <input type='checkbox' id='band-name' name='categories' value='Band Name'>
+            
+            <label for='venue'>Venue</label>
+            <select name='venue' id='venue'></select>
+        
+            <label for='genre'>Genre</label>
+            <select name='genre' id='genre'>
+                <option value='alternative'>Alternative</option>
+                <option value='blues'>Blues</option>
+                <option value='childrens'>Children's</option>
+                <option value='classical'>Classical</option>
+                <option value='comedy'>Comedy</option>
+                <option value='country'>Country</option>
+                <option value='dance'>Dance</option>
+                <option value='electronic'>Electronic</option>
+                <option value='folk'>Folk</option>
+                <option value='funk'>Funk</option>
+                <option value='hiphop-rap'>Hip-Hop & Rap</option>
+                <option value='jazz'>Jazz</option>
+                <option value='metal'>Metal</option>
+                <option value='pop'>Pop</option>
+                <option value='punk-rock'>Punk Rock</option>
+                <option value='r-b'>R&B</option>
+                <option value='reggae'>Reggae</option>
+                <option value='rock'>Rock</option>
+                <option value='soul'>Soul</option>
+            </select>
 
-            <ol class='filter-labels'>
-                <li>
-                  <label for='venue'>Venue</label>
-                </li>
-                <li>
-                  <label for='genre'>Genre</label>
-                </li>
-                <li>
-                  <label for='date'>Date</label>
-                </li>
-                <li>
-                  <label for='time'>Time</label>
-                </li>
-                <li>
-                  <label for='band-name'>Band Name</label>
-                </li>
-              </ol>
+            <label for='date'>Date</label>
+            <select name='date' id='date'></select>
+
+            <label for='time'>Time</label>
+            <select name='time' id='time'></select>
+
+            <label for='band-name'>Band Name</label>
+            <select name='band-name' id='band-name'></select>
+            
         </section>
 
         <section id='band-card'>
