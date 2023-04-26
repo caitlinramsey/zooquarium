@@ -4,6 +4,9 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='./assets/css/bands.css' />
     <title>Bands and Breweries</title>
   </head>
@@ -15,12 +18,37 @@
 
     <main>
 
-        <section id='filter-list'>
+        <section id='filter-categories'>
+            <input type='checkbox' id='venue' name='categories' value='Venue'>
+            <input type='checkbox' id='genre' name='categories' value='Genre'>
+            <input type='checkbox' id='date' name='categories' value='Date'>
+            <input type='checkbox' id='time' name='categories' value='Time'>
+            <input type='checkbox' id='band-name' name='categories' value='Band Name'>
 
+            <ol class='filter-labels'>
+                <li>
+                  <label for='venue'>Venue</label>
+                </li>
+                <li>
+                  <label for='genre'>Genre</label>
+                </li>
+                <li>
+                  <label for='date'>Date</label>
+                </li>
+                <li>
+                  <label for='time'>Time</label>
+                </li>
+                <li>
+                  <label for='band-name'>Band Name</label>
+                </li>
+              </ol>
         </section>
+
+        
 
     </main>
 
+    <script src="https://kit.fontawesome.com/64368b15a4.js" crossorigin="anonymous"></script>
     <script src = './assets/js/script.js'></script>
   </body>
 
