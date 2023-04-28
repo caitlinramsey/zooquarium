@@ -1,80 +1,55 @@
 <!DOCTYPE html>
 <html lang='en'>
+
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='./assets/css/bands.css' />
-    <title>Bands and Breweries</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='./assets/css/zoos.css' />
+    <title>Zoos</title>
   </head>
 
   <body>
-    <header id = 'header'>
-        <h1>Bands and Artists Coming to Town</h1>
-        <a class='home-button' href='index.html'>Home</a>
-        <a class='breweries-page' href='breweries.html'>Breweries</a>
+
+    <header id='header' class='header is-size-1 has-text-centered has-background-info has-text-white'>
+      <h1>Zoos</h1>
+  
+      <nav class='navbar is-size-3 has-text-centered ml-5'>
+          <a href='./index.html'>Home</a>
+          <a href='./aquariums.html'>Aquariums</a>
+      </nav>
+
     </header>
 
-    <main>
+    <h2 class='ml-5 mb-3'>What animal would you like to learn more about?</h2>
 
-        <section id='filter-categories'>
-            
-            <label for='venue'>Venue</label>
-            <select name='venue' id='venue'></select>
-        
-            <label for='genre'>Genre</label>
-            <select name='genre' id='genre'>
-                <option value='alternative'>Alternative</option>
-                <option value='blues'>Blues</option>
-                <option value='childrens'>Children's</option>
-                <option value='classical'>Classical</option>
-                <option value='comedy'>Comedy</option>
-                <option value='country'>Country</option>
-                <option value='dance'>Dance</option>
-                <option value='electronic'>Electronic</option>
-                <option value='folk'>Folk</option>
-                <option value='funk'>Funk</option>
-                <option value='hiphop-rap'>Hip-Hop & Rap</option>
-                <option value='jazz'>Jazz</option>
-                <option value='metal'>Metal</option>
-                <option value='pop'>Pop</option>
-                <option value='punk-rock'>Punk Rock</option>
-                <option value='r-b'>R&B</option>
-                <option value='reggae'>Reggae</option>
-                <option value='rock'>Rock</option>
-                <option value='soul'>Soul</option>
-            </select>
+    <input class='input is-hovered ml-5 mr-10' type='text' id='myinput' placeholder='Search for animals here!' title='Type in a name'>
 
-            <label for='date'>Date</label>
-            <select name='date' id='date'></select>
+    <button class='button is-primary is-light is-responsive is-hovered'>Search</button>
 
-            <label for='time'>Time</label>
-            <select name='time' id='time'></select>
+    <div class='card'>
+      <div class='card-image'>
+        <figure class='image is-4by3 m-5'>
+          <img src='https://bulma.io/images/placeholders/1280x960.png' alt='Placeholder image'>
+        </figure>
+      </div>
+          <div class='media-content ml-5'>
+            <p class='title is-4'>Animal Name</p>
+            <p class='subtitle is-6 pb-3 is-italic'>Scientific Name</p>
+          </div>
+        </div>
+    
+        <div class='content ml-5 mt-5'>
+          Information about this animal goes here.
+          <br>
+        </div>
 
-            <label for='band-name'>Band Name</label>
-            <input name='band-name' id='band-name'></input>
-            
-        </section>
+</body>
 
-        <section id='band-card'>
-            <div class='row'>
-                <h1>Band Name</h1>
-                <h2>Venue: </h2>
-                <h3>Genre: </h3>
-                <h3>Time: </h3>
-                <h3>Date: </h3>
-            </div>
-        </section>
-
-        
-
-    </main>
-
-    <script src="https://kit.fontawesome.com/64368b15a4.js" crossorigin="anonymous"></script>
-    <script src = './assets/js/script.js'></script>
-  </body>
+<script src="./assets/js/zoos.js"></script>
 
 </html>

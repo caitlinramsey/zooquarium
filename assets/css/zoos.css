@@ -36,16 +36,6 @@
     color: var(--link-text-color);
 }
 
-.breweries-page:hover {
+.navbar:hover {
     color: var(--link-hover-color);
-}
-
-#filter-categories {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0 0 1rem 1rem;
-}
-
-#band-card {
-    margin-left: 1rem;
 }
