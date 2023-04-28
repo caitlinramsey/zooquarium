@@ -7,5 +7,10 @@
 }
 
 .navbar {
-    font-family: ;
+    display: flex;
 }
+
+#myinput {
+    width: 30rem;
+    
+ }
