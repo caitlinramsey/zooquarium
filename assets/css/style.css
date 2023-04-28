@@ -1,0 +1,227 @@
+:root {
+    --header-text-color: black;
+    --box-shadow: lightgrey;
+    --hover: aqua;
+    --hover2: darkgreen;
+}
+
+#header {
+    background-image: linear-gradient(to right, green, aqua);
+    font-family: Lobster, cursive;
+}
+
+.nav {
+    display: flex;
+}
+
+.about-us, .contact-us {
+    color: var(--header-text-color);
+}
+
+.about-us:hover {
+    color: var(--hover);
+}
+
+.contact-us:hover  {
+    color: var(--hover2)
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aquariums {
+    width: 40vw;
+    height: 30vh;
+    background-image: url(../images/Jellyfish.jpg);
+    background-size: 600px;
+    background-position: -10px 380px;
+    background-repeat: repeat;
+    cursor: pointer;
+}
+
+.aquarium-banner {
+    background-color: var(--header-text-color);
+    color: var(--header-text-color);
+}
+
+#zoos {
+    width: 40vw;
+    height: 30vh;
+    background-image: url(../images/sparky.jpg);
+    background-size: 600px;
+    background-position: -10px 380px;
+    background-repeat: repeat;
+    cursor: pointer;
+}
+
+.zoo-banner {
+    background-color: var(--header-text-color);
+    color: var(--header-text-color);
+}
+
+@media screen and (max-width: 2560px) {
+
+    .cards {
+        align-content: center;
+    }
+
+    #aquariums {
+        width: 45vw;
+        height: 50vh;
+        background-size: 1100px;
+        background-position: 20px 700px;
+    }
+
+    #zoos {
+        width: 45vw;
+        height: 50vh;
+        background-size: 1200px;
+        background-position: 0px 750px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .cards {
+        align-content: center;
+    }
+
+    #aquariums {
+        width: 45vw;
+        height: 50vh;
+        background-size: 850px;
+        background-position: -50px 600px;
+
+    }
+
+    #zoos {
+        width: 45vw;
+        height: 50vh;
+        background-size: 900px;
+        background-position: -50px 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .cards {
+        align-content: center;
+        display: block;
+       margin-left: 3rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 900px;
+        background-position: -50px 550px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 1000px;
+        background-position: 0px 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards {
+        align-content: center;
+        display: block;
+       margin-left: 2.5rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 900px;
+        background-position: -70px 550px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 1000px;
+        background-position: -80px 600px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .cards {
+        align-content: center;
+        display: block;
+       margin-left: 1rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 700px;
+        background-position: -190px 550px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 800px;
+        background-position: -150px 600px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .cards {
+        align-content: center;
+        display: block;
+       margin-left: 1rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 500px;
+        background-position: -100px 420px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 500px;
+        background-position: -50px 420px;
+    }
+}
+
+
+
+@media screen and (max-width: 280px) {
+
+    .cards {
+        align-content: center;
+        display: block;
+       margin-left: 1.5rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 80vh;
+        background-size: 450px;
+        background-position: -120px 175px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 80vh;
+        background-size: 600px;
+        background-position: -150px 140px;
+    }
+}

@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='./assets/css/style.css'>
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel="stylesheet' />
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
-    type="text/css"
-    />
+    <link rel="stylesheet'href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css' type='text/css'/>
+    
     <title>Zoos and Aquariums</title>
 
     <style>
@@ -34,28 +34,37 @@
 
 
 <body>
-    <main>
-        <header id='header' class=''>
-            <h1>Zoos and Aquariums</h1>
-            <nav>
-                <ul>
-                    <li><a href='#about-us'>About Us</a></li>
-                    <li><a href='#contact-us'>Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
 
+    <main>
+
+    <header id='header'>
+
+        <h1 class='zoos-and-aquariums has-text-centered is-size-1 has-text-white'>Zoos and Aquariums</h1>
+            
+        <nav class='nav mb-5 is-size-3 has-text-centered is-justify-content-space-around'>
+            <a class='about-us' href='#about-us'>About Us</a>
+            <a class='contact-us' href='#contact-us'>Contact Us</a>
+        </nav>
+
+    </header>
+
+    <section class='cards is-justify-content-space-around'>
+        <a href='./aquariums.html'>
         <section id='aquariums' class='aquariums'>
-            <div class='card'>
-                <div class='card-image'>
-                    <h1>Aquariums</h1>
-                </div>
+            <div class='aquarium-banner has-background-primary has-text-centered'>
+                <span class='banner is-size-3 ml-3 has-text-weight-semibold'>Want to learn more about aquarium animals?</span>
             </div>
         </section>
+        </a>
 
+        <a href='./zoos.html'>
         <section id='zoos' class='zoos'>
-            <h1>Zoos</h1>
+            <div class='zoo-banner has-background-primary has-text-centered'>
+                <span class='banner is-size-3 ml-3 has-text-weight-semibold'>Want to learn more about zoo animals?</span>
+            </div>
         </section>
+        </a>
+    </section>
 
         <!-- <section id='map' class='map'>
             <1h>Find a Zoo Near You!</1h>
@@ -63,12 +72,13 @@
 
         <div id="map"></div>
 
-        <section>
-            <h1>About Us!</h1>
-            <p>HERE IS WHERE WE WILL TYPE SOMETHING ABOUT US</p>
-        </section>
+    <section>
+        <h1>About Us!</h1>
+        <p>HERE IS WHERE WE WILL TYPE SOMETHING ABOUT US</p>
+    </section>
 
     </main>
+
     <footer>
         <div id="contact" class="flex-container">
             <div class="flex-child-3">
@@ -85,6 +95,9 @@
             </div>
         </div>
     </footer>
+
 </body>
+
+<script src="./assets/js/script.js"></script>
 
 </html>
