@@ -1,0 +1,15 @@
+:root {
+
+}
+
+* {
+
+}
+
+.navbar {
+    display: flex;
+}
+
+#myinput {
+    width: 30rem;
+}
