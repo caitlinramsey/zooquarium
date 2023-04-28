@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang='en'>
+
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='./assets/css/breweries.css' />
-    <title>Breweries</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='./assets/css/aquariums.css' />
+    <title>Aquariums</title>
   </head>
 
   <body>
-    <div class="header">
-      <ul class="tabs">
-        <li><a>Our Beer</a></li>
-        <li><a>Our Mission</a></li>
-        <li><a>Contact us</a></li>
-      </ul>
-    </div>
-    <h2>Look-up your beer here:</h2>
 
-<input type="text" id="myInput" placeholder="Search for names" title="Type in a name">
+    <header id='header' class='header is-size-1 has-text-centered has-background-info has-text-white'>
+      <h1>Aquariums</h1>
+  
+      <nav class='navbar is-size-3 has-text-centered'>
+        <ul>
+          <li><a href='./index.html'>Home</a></li>
+          <li><a href='./zoos.html'>Zoos</a></li>
+        </ul>
+      </nav>
 
-<ul id="myUL">
-  <li><a href="#">Lager</a></li>
-  <li><a href="#">Pale Ale</a></li>
-  <li><a href="#">Ale</a></li>
-  <li><a href="#">Pilsner</a></li>
-  <li><a href="#">Witbier</a></li>
-  <li><a href="#">Brown Ale</a></li>
-  <li><a href="#">Porter</a></li>
-</ul>
+    </header>
 
-<div class="Vision">
-  <h3>VISION</h3>
-  <p><strong>At Breweries In Town</strong> Brewery we want all our customers, suppliers and members of staff to know why we exists and why we do what we do. 
+    <h2 class='ml-5'>What aquarium animal would you like to learn more about?</h2>
 
-    Our mission is 'to enrich our customers with mouth watering, quality tasting beers. While providing an exceptional level of customer service and support'</p>
-</div>
-  <div class="Mission">
-    <h3>MISION</h3>
-    <p> Our vision is 'to ensure Acorn Brewery will be renowned for brewing excellent quality beers as well as delivering fantastic customer service, by ensuring pride and passion underlines every brew and customer interaction'</p>
-  </div>
-</div>
+    <input class='input is-hovered ml-5 mr-10' type='text' id='myInput' placeholder='Search for animals here!' title='Type in a name'>
+
+    <button class='button is-primary is-light is-responsive is-hovered'>Search</button>
+
+    <div class='card'>
+      <div class='card-image'>
+        <figure class='image is-4by3 m-5'>
+          <img src='https://bulma.io/images/placeholders/1280x960.png' alt='Placeholder image'>
+        </figure>
+      </div>
+          <div class='media-content ml-5'>
+            <p class='title is-4'>Animal Name</p>
+            <p class='subtitle is-6 pb-3 is-italic'>Scientific Name</p>
+          </div>
+        </div>
+    
+        <div class='content ml-5 mt-5'>
+          Information about this animal goes here.
+          <br>
+        </div>
+
+</body>
+
+</html>
