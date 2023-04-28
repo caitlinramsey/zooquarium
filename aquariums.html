@@ -4,35 +4,51 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='./assets/css/bands.css' />
-    <title>Breweries</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='./assets/css/aquariums.css' />
+    <title>Aquariums</title>
   </head>
 
   <body>
+
+    <header id='header'>
+      <h1>Aquariums</h1>
   
-    <nav>
+    <nav class='navbar has-text-centered'>
       <ul>
-        <li><a href="#beer">Our Beer</a></li>
-        <li><a href="#mission">Our Mission</a></li>
-        <li><a href="#taproom">Taproom</a></li>
+        <li><a href='./index.html'>Home</a></li>
+        <li><a href='./zoos.html'>Zoos</a></li>
       </ul>
     </nav>
 
-    <h2>Look-up your beer here:</h2>
+  </header>
 
-<input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+    <h2 class='ml-5'>What aquarium animal would you like to learn more about?</h2>
 
-<ul id="myUL">
-  <li><a href="#">Lager</a></li>
-  <li><a href="#">Pale Ale</a></li>
+    <input class='ml-5' type='text' id='myInput' placeholder='Search for animals here!' title='Type in a name'>
 
-  <li><a href="#">Ale</a></li>
-  <li><a href="#">Pilsner</a></li>
+    <div class='card'>
+      <div class='card-image'>
+        <figure class='image is-4by3 m-5'>
+          <img src='https://bulma.io/images/placeholders/1280x960.png' alt='Placeholder image'>
+        </figure>
+      </div>
+          <div class='media-content ml-5'>
+            <p class='title is-4'>Animal Name</p>
+            <p class='subtitle is-6 pb-3 is-italic'>Scientific Name</p>
+          </div>
+        </div>
+    
+        <div class='content ml-5 mt-5'>
+          Information about this animal goes here.
+          <br>
+        </div>
+      </div>
+    </div>
 
-  <li><a href="#">Witbier</a></li>
-  <li><a href="#">Brown Ale</a></li>
-  <li><a href="#">Porter</a></li>
-</ul>
+  </body>
+
+</html>
