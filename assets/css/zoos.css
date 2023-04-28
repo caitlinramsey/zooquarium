@@ -1,7 +1,5 @@
 :root {
-    --header-title-text-color: black;
-    --link-text-color: white;
-    --link-hover-color: aqua;
+    --header-text-color: lightgreen;
 }
 
 * {
@@ -9,33 +7,40 @@
     padding: 0;
 }
 
+html {
+    background-image: url(../images/jaguar-flipped.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 #header {
-    font-size: 24px;
-    text-align: center;
-    /* background-image: linear-gradient(blueviolet, violet); */
-    background-image: linear-gradient(aqua, blue);
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background-image: linear-gradient(lightgreen, green);
+    font-family: Lobster, cursive;
+}
+
+.nav {
+    display: flex;
+}
+
+a {
     color: var(--header-text-color);
-    font-weight: bolder;
-    font-family: 'Lobster', cursive;
+
 }
 
-.home-button {
-    text-decoration: none;
-    color: var(--link-text-color);
-    margin-right: 1rem;
-}
+.searchbox {
+    width: 25rem;
+ }
 
-.home-button:hover {
-    color: var(--link-hover-color);
+.button {
+    background-color: var(--header-text-color);
 }
-
-.breweries-page {
-    text-decoration: none;
-    color: var(--link-text-color);
-}
-
-.navbar:hover {
-    color: var(--link-hover-color);
+ 
+.information {
+    padding: 0 1rem 0 1rem;
+    border-style: double;
+    box-shadow: inset 0 -3rem 3rem var(--box-shadow)
 }
