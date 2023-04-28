@@ -61,6 +61,11 @@
     color: var(--header-text-color);
 }
 
+#map {
+    height: 80vh;
+    width: 80vw;
+  }
+
 @media screen and (max-width: 2560px) {
 
     .cards {
