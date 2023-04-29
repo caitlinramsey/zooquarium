@@ -3,6 +3,7 @@
     --box-shadow: lightgrey;
     --hover: aqua;
     --hover2: darkgreen;
+    --zoo-banner: green;
 }
 
 #header {
@@ -42,7 +43,7 @@
 }
 
 .aquarium-banner {
-    background-color: var(--header-text-color);
+    background-color: var(--hover);
     color: var(--header-text-color);
 }
 
@@ -57,14 +58,31 @@
 }
 
 .zoo-banner {
-    background-color: var(--header-text-color);
+    background-color: var(--zoo-banner);
     color: var(--header-text-color);
 }
 
 #map {
     height: 80vh;
-    width: 80vw;
+    width: 90vw;
+    margin-left: 7rem;
   }
+
+.footer {
+    background-image: linear-gradient(to right, aqua, green);
+    font-family: Lobster, cursive;
+}
+
+.contact-details {
+    display: flex;
+    color: var(--header-text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+
 
 @media screen and (max-width: 2560px) {
 
@@ -107,6 +125,12 @@
         background-size: 900px;
         background-position: -50px 600px;
     }
+
+    #map {
+        height: 60vh;
+        width: 90vw;
+        margin-left: 4.5rem;
+      }
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,10 +151,16 @@
 
     #zoos {
         width: 90vw;
-        height: 50vh;
+        height: 40vh;
         background-size: 1000px;
         background-position: 0px 600px;
     }
+
+    #map {
+        height: 60vh;
+        width: 90vw;
+        margin-left: 3rem;
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -155,6 +185,12 @@
         background-size: 1000px;
         background-position: -80px 600px;
     }
+
+    #map {
+        height: 50vh;
+        width: 90vw;
+        margin-left: 2.5rem;
+      }
 }
 
 @media screen and (max-width: 425px) {
@@ -179,6 +215,16 @@
         background-size: 800px;
         background-position: -150px 600px;
     }
+
+    #map {
+        height: 40vh;
+        width: 90vw;
+        margin-left: 1rem;
+      }
+
+    .contact-details {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -202,6 +248,16 @@
         height: 50vh;
         background-size: 500px;
         background-position: -50px 420px;
+    }
+
+    #map {
+        height: 40vh;
+        width: 90vw;
+        margin-left: 1rem;
+      }
+
+    .contact-details {
+        display: block;
     }
 }
 
@@ -228,5 +284,15 @@
         height: 80vh;
         background-size: 600px;
         background-position: -150px 140px;
+    }
+
+    #map {
+        height: 50vh;
+        width: 90vw;
+        margin-left: 1.5rem;
+      }
+
+    .contact-details {
+        display: block;
     }
 }
