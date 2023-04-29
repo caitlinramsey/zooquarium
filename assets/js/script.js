@@ -1,29 +1,36 @@
+let zoos = [
+  {
+    long: -78.644257,
+    lat: 35.787743
+  },
+
+  {
+    long: -78.898621,
+    lat: 35.994034
+  },
+  
+]
+
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2ltb21vLTEyMzQiLCJhIjoiY2xnenFqdmE2MDNhazNzbGw2dG5sOGJnZSJ9.q6QlnKPlEGI19HBumS-V2A';
+const map = new mapboxgl.Map({
+container: 'map',
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+style: 'mapbox://styles/mapbox/streets-v12',
+center: [-78.644257 ,35.787743 ],
+zoom: 4
+});
 
 
-navigator.geolocation.getCurrentPosition(successLocation,errorLocation, {
-    enableHighAccuracy: true,
-
-})
-
-function successLocation(position) {
-    setupMap ([position.coords.longitude, position.coords.latitude])
-
+for (let i = 0; i < zoos.length; i++) {
+  const marker1 = new mapboxgl.Marker()
+  .setLngLat([zoos[i].long ,zoos[i].lat])
+  .addTo(map);
 }
+ 
+// Create a default Marker and add it to the map.
 
-function errorLocation() {
-    setupMap ([52.5200, 13.4050])
-} 
-
-function setupMap(center) {
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11',
-  center: center,
-  zoom: 3,
-})
-
+ 
 const nav = new mapboxgl.NavigationControl()
 map.addControl(nav)
 
@@ -32,4 +39,3 @@ var directions = new MapboxDirections({
 })
 
 map.addControl(directions, "top-left")
-}
