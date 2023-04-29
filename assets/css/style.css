@@ -1,22 +1,27 @@
 :root {
     --header-text-color: black;
+    --second-header-text: aqua;
     --box-shadow: lightgrey;
-    --hover: aqua;
-    --hover2: darkgreen;
+    --hover: white;
     --zoo-banner: green;
 }
 
 #header {
-    background-image: linear-gradient(to right, green, aqua);
+    background-image: url(../images/african-grey.jpg);
+    background-size: 2600px;
+    background-position: 0px 1550px;
+    background-repeat: repeat;
+    background-color: none;
     font-family: Lobster, cursive;
+    padding-bottom: 80rem;
 }
 
 .nav {
     display: flex;
 }
 
-.about-us, .contact-us {
-    color: var(--header-text-color);
+.nav a {
+    color: var(--second-header-text);
 }
 
 .about-us:hover {
@@ -24,7 +29,7 @@
 }
 
 .contact-us:hover  {
-    color: var(--hover2)
+    color: var(--hover)
 }
 
 .cards {
@@ -33,28 +38,34 @@
 }
 
 #aquariums {
-    width: 40vw;
     height: 30vh;
-    background-image: url(../images/Jellyfish.jpg);
+    background-image: url(../images/boxfish.jpg);
     background-size: 600px;
     background-position: -10px 380px;
     background-repeat: repeat;
     cursor: pointer;
 }
 
+#aquariums:hover {
+    opacity: 0.7;
+}
+
 .aquarium-banner {
-    background-color: var(--hover);
+    background-color: var(--second-header-text);
     color: var(--header-text-color);
 }
 
 #zoos {
-    width: 40vw;
     height: 30vh;
-    background-image: url(../images/sparky.jpg);
+    background-image: url(../images/peacock.jpg);
     background-size: 600px;
     background-position: -10px 380px;
     background-repeat: repeat;
     cursor: pointer;
+}
+
+#zoos:hover {
+    opacity: 0.7;
 }
 
 .zoo-banner {
@@ -68,18 +79,37 @@
     margin-left: 7rem;
   }
 
+.noHover {
+    pointer-events: none;
+}
+
+.about-us {
+    font-family: Lobster, cursive;
+}
+
+.about-us p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
 .footer {
-    background-image: linear-gradient(to right, aqua, green);
+    background-color: var(--header-text-color);
     font-family: Lobster, cursive;
 }
 
 .contact-details {
     display: flex;
-    color: var(--header-text-color);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.contact-details a {
+    color: var(--second-header-text);
+}
+
+.contact-details a:hover {
+    color: var(--hover);
 }
 
 
@@ -106,6 +136,16 @@
 }
 
 @media screen and (max-width: 1440px) {
+
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 2300px;
+        background-position: -100px 1500px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 70rem;
+    }
 
     .cards {
         align-content: center;
@@ -135,6 +175,16 @@
 
 @media screen and (max-width: 1024px) {
 
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 2300px;
+        background-position: -600px 1400px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 70rem;
+    }
+
     .cards {
         align-content: center;
         display: block;
@@ -143,9 +193,9 @@
 
     #aquariums {
         width: 90vw;
-        height: 50vh;
-        background-size: 900px;
-        background-position: -50px 550px;
+        height: 40vh;
+        background-size: 1000px;
+        background-position: 0px 600px;
         margin-bottom: 2rem;
     }
 
@@ -165,6 +215,16 @@
 
 @media screen and (max-width: 768px) {
 
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 2000px;
+        background-position: -600px 0px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 70rem;
+    }
+
     .cards {
         align-content: center;
         display: block;
@@ -175,7 +235,7 @@
         width: 90vw;
         height: 50vh;
         background-size: 900px;
-        background-position: -70px 550px;
+        background-position: -20px 650px;
         margin-bottom: 2rem;
     }
 
@@ -195,6 +255,16 @@
 
 @media screen and (max-width: 425px) {
 
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 1500px;
+        background-position: -600px 0px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 50rem;
+    }
+
     .cards {
         align-content: center;
         display: block;
@@ -204,8 +274,8 @@
     #aquariums {
         width: 90vw;
         height: 50vh;
-        background-size: 700px;
-        background-position: -190px 550px;
+        background-size: 800px;
+        background-position: -260px 100px;
         margin-bottom: 2rem;
     }
 
@@ -222,24 +292,35 @@
         margin-left: 1rem;
       }
 
-    .contact-details {
-        display: block;
+      .contact-details {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 390px) {
 
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 1500px;
+        background-position: -620px 0px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 50rem;
+    }
+
     .cards {
         align-content: center;
         display: block;
-       margin-left: 1rem;
+        margin-left: 1rem;
     }
 
     #aquariums {
         width: 90vw;
         height: 50vh;
-        background-size: 500px;
-        background-position: -100px 420px;
+        background-size: 450px;
+        background-position: -10px 450px;
         margin-bottom: 2rem;
     }
 
@@ -257,13 +338,24 @@
       }
 
     .contact-details {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 
 
 @media screen and (max-width: 280px) {
+
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 1100px;
+        background-position: -450px 60px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 35rem;
+    }
 
     .cards {
         align-content: center;
@@ -275,7 +367,7 @@
         width: 90vw;
         height: 80vh;
         background-size: 450px;
-        background-position: -120px 175px;
+        background-position: -110px 210px;
         margin-bottom: 2rem;
     }
 
