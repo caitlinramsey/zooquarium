@@ -1,12 +1,15 @@
 //Variables
 const apiKey = "Vsn/suc5VIeT+CF4MGJtlA==Jo3z5DiNaWaU6u2H";
+//Need to figure out how to get it where people can search for any animal
 const animal = "";
 const searchInput = "";
 const animalsList = [];
+const searchButton = $("#searchButton");
 
 //Function that allows the user to search for a specific animal
 function searchAnimals() {
-  const searchInput = document.getElementById("searchInput").value;
+  //Need to rename searchInput with HTML element
+  const searchInput = document.getElementById("searchButton").value;
   const apiKey = `https://api-ninjas.com/api/animals?search=${searchInput}`;
 
   fetch(apiKey)
@@ -22,3 +25,7 @@ function searchAnimals() {
       });
     });
 }
+
+//Event Listener
+const searchButton = document.querySelector(".search-button button");
+searchButton.addEventListener("click", searchAnimals);
