@@ -1,15 +1,15 @@
 //Variables
-const apiKey = "";
-const aquaAnimal = "";
+const apiKey = "Vsn/suc5VIeT+CF4MGJtlA==Jo3z5DiNaWaU6u2H";
+const animal = "";
 const searchInput = "";
-const animalList = [];
+const animalsList = [];
 
 //Function that allows the user to search for a specific animal
 function searchAnimals() {
   const searchInput = document.getElementById("searchInput").value;
-  const apiUrl = `https://api-ninjas.com/api/animals?search=${searchInput}`;
+  const apiKey = `https://api-ninjas.com/api/animals?search=${searchInput}`;
 
-  fetch(apiUrl)
+  fetch(apiKey)
     .then((response) => response.json())
     .then((data) => {
       const animalsList = document.getElementById("animalsList");
