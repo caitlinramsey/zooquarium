@@ -1,8 +1,8 @@
 //Variables
 // const apiKey = "Vsn/suc5VIeT+CF4MGJtlA==Jo3z5DiNaWaU6u2H";
-const animal = "";
+// const animal = "";
 // const searchInput = "";
-const animalsList = [];
+// const animalsList = [];
 // const searchButton = $("#.searchButton");
 
 //Function that allows the user to search for a specific animal
@@ -32,14 +32,11 @@ async function searchAnimals() {
   fetch(apiUrl, options)
     .then((response) => response.json())
     .then((data) => {
-      const animalsList = document.getElementById("animalsList");
-      animalsList.innerHTML = "";
-
-      data.forEach((animal) => {
-        const animalElement = document.createElement("div");
-        animalElement.innerHTML = `<h2>${animal.name}</h2><img src="${animal.image}" alt="${animal.name}">`;
-        animalsList.appendChild(animalElement);
-      });
+      const animal = data[0];
+      const animalName = document.querySelector(".title");
+      animalName.innerHTML = animal.name;
+      const scientificName = document.querySelector(".subtitle");
+      scientificName.innerHTML = animal.taxonomy.scientific_name;
     });
 }
 
