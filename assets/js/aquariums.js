@@ -4,10 +4,10 @@ const apiKey = "Vsn/suc5VIeT+CF4MGJtlA==Jo3z5DiNaWaU6u2H";
 const animal = "";
 const searchInput = "";
 const animalsList = [];
-const searchButton = $("#searchButton");
+// const searchButton = $("#.searchButton");
 
 //Function that allows the user to search for a specific animal
-function searchAnimals() {
+async function searchAnimals() {
   //Need to rename searchInput with HTML element
   const searchInput = document.getElementById("searchButton").value;
   const apiKey = `https://api-ninjas.com/api/animals?search=${searchInput}`;
@@ -26,6 +26,6 @@ function searchAnimals() {
     });
 }
 
-//Event Listener
+//Event Listener [Do I want to put this in the above function]
 const searchButton = document.querySelector(".search-button button");
 searchButton.addEventListener("click", searchAnimals);
