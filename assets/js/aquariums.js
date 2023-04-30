@@ -33,10 +33,35 @@ async function searchAnimals() {
     .then((response) => response.json())
     .then((data) => {
       const animal = data[0];
-      const animalName = document.querySelector(".title");
-      animalName.innerHTML = animal.name;
-      const scientificName = document.querySelector(".subtitle");
-      scientificName.innerHTML = animal.taxonomy.scientific_name;
+      const animalNameElement = document.querySelector(".title");
+      animalNameElement.innerHTML = animal.name;
+      const scientificNameElement = document.querySelector(".subtitle");
+      scientificNameElement.innerHTML = animal.taxonomy.scientific_name;
+      const informationElement = document.querySelector(".information");
+      informationElement.innerHTML = "";
+
+      var characteristicElement = document.createElement("div");
+      characteristicElement.innerHTML = `Biggest Threat: ${animal.characteristics.biggest_threat}`;
+      informationElement.appendChild(characteristicElement);
+
+      characteristicElement = document.createElement("div");
+      characteristicElement.innerHTML = `Color: ${animal.characteristics.color}`;
+      informationElement.appendChild(characteristicElement);
+
+      //
+
+      animal.characteristics.common_name;
+      animal.characteristics.diet;
+      animal.characteristics.estimated_population_size;
+      animal.characteristics.gestation_perio;
+      animal.characteristics.group_behavior;
+      animal.characteristics.length;
+      animal.characteristics.lifespan;
+      animal.characteristics.most_distinctive_feature;
+      animal.characteristics.number_of_species;
+      animal.characteristics.prey;
+      animal.characteristics.top_speed;
+      animal.characteristics.weight;
     });
 }
 
