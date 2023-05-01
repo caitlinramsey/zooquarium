@@ -39,3 +39,10 @@ var directions = new MapboxDirections({
 })
 
 map.addControl(directions, "top-left")
+
+// adding search MAPBOX customize for all searches 
+
+new MapboxSearchBox()
+const search = new MapboxSearchBox();
+search.accessToken = 'pk.eyJ1Ijoic2ltb21vLTEyMzQiLCJhIjoiY2xnenFqdmE2MDNhazNzbGw2dG5sOGJnZSJ9.q6QlnKPlEGI19HBumS-V2A';
+map.addControl(search);
