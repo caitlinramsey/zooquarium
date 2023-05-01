@@ -11,7 +11,8 @@ async function searchAnimals() {
     },
   };
 
-  //
+  //Fetch that renders the searched animals information
+  //based on the callback recieved from above API.
   fetch(apiUrl, options)
     .then((response) => response.json())
     .then((data) => {
@@ -51,6 +52,6 @@ async function searchAnimals() {
     });
 }
 
-//Event Listener [Do I want to put this in the above function]
+//Event Listener
 const searchButton = document.querySelector(".search-button button");
 searchButton.addEventListener("click", searchAnimals);
