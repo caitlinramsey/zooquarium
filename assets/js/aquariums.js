@@ -4,6 +4,12 @@ const apiKey = "35962769-99a3782536c333badafa928a5";
 //Function that allows the user to search for a specific animal
 async function searchAnimals() {
   var searchInput = document.querySelector(".input").value;
+
+  //Save user seach to localStorage
+  var history = JSON.parse(localStorage.getItem("searchHistory")) || [];
+  history.push(searchInput);
+  localStorage.setItem("searchHistory", JSON.stringify(history));
+
   const apiUrl = `https://animals-by-api-ninjas.p.rapidapi.com/v1/animals?name=${searchInput}`;
   const options = {
     method: "GET",
