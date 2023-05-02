@@ -1,6 +1,7 @@
-//Function that allows the user to search for a specific animal
+//apiKey to access API with animal photos
 const apiKey = "35962769-99a3782536c333badafa928a5";
 
+//Function that allows the user to search for a specific animal
 async function searchAnimals() {
   var searchInput = document.querySelector(".input").value;
   const apiUrl = `https://animals-by-api-ninjas.p.rapidapi.com/v1/animals?name=${searchInput}`;
@@ -13,33 +14,7 @@ async function searchAnimals() {
     },
   };
 
-  /*
-function fetchimg () {
-   return fetch(
-    "https://pixabay.com/api?key=" +
-      apiKey +
-      "&q=" +
-      encodeURIComponent(searchInput)
-  )
-    .then((res) => res.json())
-    .then((data) => {
-      return data.hits;
-    });
-}
-
-function fetchData() {
-  ...
-}
-
-Promise.all ([fetchImg fetchData])
-.then(function(responses){
-  const images = responses[0]
-  const data = resonses[1]
-})
-
-
-
- const getImages = () => {
+  const getImages = () => {
     return fetch(
       "https://pixabay.com/api?key=" +
         apiKey +
@@ -52,32 +27,22 @@ Promise.all ([fetchImg fetchData])
 
   //Fetch that renders the searched animals information
   //based on the callback recieved from above API.
-
   const getAnimalData = () => {
     return fetch(apiUrl, options)
-    .then((response) => response.json())
-    .then((data) => data)
-}
+      .then((response) => response.json())
+      .then((data) => data);
+  };
 
-  Promise.all([getImages(), getAnimalData()])
-    .then(([images, data]) => {
-      const image = images[0];
-      const animal = data[0];
-      // Do whatever you need to do for rendering 
-      // Just like you had before
-  })
-  */
-  fetch(
-    "https://pixabay.com/api?key=" +
-      apiKey +
-      "&q=" +
-      encodeURIComponent(searchInput)
-  )
-    .then((res) => res.json())
-    .then((data) => console.log(">>> data >>>", data));
+  Promise.all([getImages(), getAnimalData()]).then(([images, data]) => {
+    const image = images[0];
+    const animal = data[0];
 
-  //Fetch that renders the searched animals information
-  //based on the callback recieved from above API.
+    document
+      .getElementById("animal-image")
+      .setAttribute("src", image.webformatURL);
+  });
+
+  //Fetch that renders the searched animals information based on the callback recieved from above API.
   fetch(apiUrl, options)
     .then((response) => response.json())
     .then((data) => {
