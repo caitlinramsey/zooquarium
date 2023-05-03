@@ -6,9 +6,8 @@ async function searchAnimals() {
   var searchInput = document.querySelector(".input").value;
 
   //Save user seach to localStorage
-  var history = JSON.parse(localStorage.getItem("searchHistory")) || [];
-  history.push(searchInput);
-  localStorage.setItem("searchHistory", JSON.stringify(history));
+  saveSearch(searchInput);
+  getSearchHistory();
 
   const apiUrl = `https://animals-by-api-ninjas.p.rapidapi.com/v1/animals?name=${searchInput}`;
   const options = {
@@ -114,6 +113,42 @@ async function searchAnimals() {
     });
 }
 
+// Function to save searched animals in local storage
+function saveSearch(animal) {
+  const history = localStorage.getItem("searchHistory") || "[]";
+  const searchHistory = JSON.parse(history);
+  searchHistory.push(animal);
+  localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+}
+
+// Function to retrieve search history from local storage
+function getSearchHistory() {
+  const history = localStorage.getItem("searchHistory") || "[]";
+  const searchHistory = JSON.parse(history);
+  const container = document.getElementById("searchHistory");
+  container.innerHTML = "";
+  const ul = document.createElement("ul");
+  for (let animal of searchHistory) {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.textContent = animal;
+    button.addEventListener("click", () => {
+      document.querySelector(".input").value = animal;
+
+      searchAnimals();
+    });
+
+    li.appendChild(button);
+    ul.appendChild(li);
+  }
+  container.appendChild(ul);
+}
+
+window.addEventListener("load", () => {
+  getSearchHistory();
+});
+
 //Event Listener for user click when searching for an animal
 const searchButton = document.querySelector(".search-button button");
 searchButton.addEventListener("click", searchAnimals);
+window.addEventListener("load", getSearchHistory);

@@ -23,6 +23,11 @@ html {
     font-family: Lobster, cursive;
 }
 
+#searchHistory {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav {
     display: flex;
 }
@@ -33,7 +38,7 @@ a {
 
 .searchbox {
     width: 25rem;
- }
+}
 
 .button {
     background-color: var(--header-text-color);
