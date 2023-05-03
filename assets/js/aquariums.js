@@ -131,15 +131,9 @@ function getSearchHistory() {
   const ul = document.createElement("ul");
   for (let animal of searchHistory) {
     const li = document.createElement("li");
-    const button = document.createElement("button");
     button.textContent = animal;
     button.addEventListener("click", () => searchAnimals(animal));
-    li.appendChild(button);
-    ul.appendChild(li);
-
-    button.addEventListener("click", () => searchAnimals(animal));
   }
-  container.appendChild(ul);
 }
 
 window.addEventListener("load", () => {
