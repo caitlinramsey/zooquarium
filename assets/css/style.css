@@ -113,11 +113,13 @@
 }
 
 .marker {
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+    background-color: rgb(89, 155, 216);
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
     border-radius: 50%;
   }
+
 
 @media screen and (max-width: 2560px) {
 
