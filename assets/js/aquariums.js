@@ -117,16 +117,13 @@ async function searchAnimals() {
 function saveSearch(animal) {
   const history = localStorage.getItem("searchHistory") || "[]";
   const searchHistory = JSON.parse(history);
-  console.log(searchHistory);
-  for (let i = 0; i < history.length; i++) {
-    if (searchHistory[i] == animal) {
+  for (let i = 0; i < searchHistory.length; i++) {
+    if (animal === searchHistory[i]) {
       return;
-    } else {
-      searchHistory.push(animal);
-      localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
-      getSearchHistory();
     }
   }
+  searchHistory.push(animal);
+  localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 }
 
 // Function to retrieve search history from local storage

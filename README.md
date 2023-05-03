@@ -10,7 +10,7 @@ technologies used, screenshot, and link to deployed application).
 # Zoos and Aquariums
 
 ## Description
-This application is intended to encourage 
+This application is intended to encourage both those who are animal enthusiasts and those who are novice learners, to explore animals on interest. Our team wanted to provide an application that would allow users to search for an animal of interest, as well as allow users to search for a zoo near them. 
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
