@@ -128,12 +128,18 @@ function getSearchHistory() {
   const searchHistory = JSON.parse(history);
   const container = document.getElementById("searchHistory");
   container.innerHTML = "";
+  const ul = document.createElement("ul");
   for (let animal of searchHistory) {
+    const li = document.createElement("li");
     const button = document.createElement("button");
     button.textContent = animal;
     button.addEventListener("click", () => searchAnimals(animal));
-    container.appendChild(button);
+    li.appendChild(button);
+    ul.appendChild(li);
+
+    button.addEventListener("click", () => searchAnimals(animal));
   }
+  container.appendChild(ul);
 }
 
 window.addEventListener("load", () => {
@@ -143,3 +149,4 @@ window.addEventListener("load", () => {
 //Event Listener for user click when searching for an animal
 const searchButton = document.querySelector(".search-button button");
 searchButton.addEventListener("click", searchAnimals);
+window.addEventListener("load", getSearchHistory);

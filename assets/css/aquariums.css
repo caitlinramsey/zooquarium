@@ -23,12 +23,10 @@ html {
     font-family: Lobster, cursive;
 }
 
-/* CSS code to make the container element a flex container with vertical direction */
 #searchHistory {
     display: flex;
     flex-direction: column;
 }
-
 
 .nav {
     display: flex;
