@@ -2,7 +2,7 @@
 const apiKey = "35962769-99a3782536c333badafa928a5";
 
 //Function that allows the user to search for a specific animal
-async function searchAnimals() {
+async function searchAnimals(animal) {
   var searchInput = document.querySelector(".input").value;
 
   //Save user seach to localStorage
@@ -113,6 +113,32 @@ async function searchAnimals() {
       informationElement.appendChild(locationElement);
     });
 }
+
+// Function to save searched animals in local storage
+function saveSearch(animal) {
+  const history = localStorage.getItem("searchHistory") || "[]";
+  const searchHistory = JSON.parse(history);
+  searchHistory.push(animal);
+  localStorage.setItem("searchHistory", JSON.stringify(history));
+}
+
+// Function to retrieve search history from local storage
+function getSearchHistory() {
+  const history = localStorage.getItem("searchHistory") || "[]";
+  const searchHistory = JSON.parse(history);
+  const container = document.getElementById("searchHistory");
+  container.innerHTML = "";
+  for (let animal of searchHistory) {
+    const button = document.createElement("button");
+    button.textContent = animal;
+    button.addEventListener("click", () => searchAnimals(animal));
+    container.appendChild(button);
+  }
+}
+
+window.addEventListener("load", () => {
+  getSearchHistory();
+});
 
 //Event Listener for user click when searching for an animal
 const searchButton = document.querySelector(".search-button button");
