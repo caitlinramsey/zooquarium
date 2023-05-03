@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-  <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
-    <link rel='stylesheet' href='./assets/css/zoos.css' />
-    <title>Zoos</title>
-  </head>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Lobster&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='./assets/css/zoos.css' />
+  <title>Zoos</title>
+</head>
 
-  <body>
+<body>
 
-    <header id='header'>
-      <h1 class='zoos has-text-centered is-size-1 has-text-white'>Zoos</h1>
-  
-        <nav class='nav mb-5 is-size-3 has-text-centered is-justify-content-space-around'>
-          <a href='./index.html'>Home</a>
-          <a href='./aquariums.html'>Aquariums</a>
-        </nav>
+  <header id='header'>
+    <h1 class='zoos has-text-centered is-size-1 has-text-white'>Zoos</h1>
 
-    </header>
+    <nav class='nav mb-5 is-size-3 has-text-centered is-justify-content-space-around'>
+      <a href='./index.html'>Home</a>
+      <a href='./aquariums.html'>Aquariums</a>
+    </nav>
 
-    <h2 class='ml-5 mb-3 has-text-weight-semibold'>What animal would you like to learn more about?</h2>
+  </header>
 
-    <div class='searchbox ml-5 mb-2 is-responsive'>
-      <p class='control has-icons-left'>
-        <input class='input' type='text' placeholder='Search for animals here!'>
-        <span class='icon is-small is-left'>
-          <i class='fa-solid fa-otter'></i>
-        </span>
-      </p>
+  <h2 class='ml-5 mb-3 has-text-weight-semibold'>What animal would you like to learn more about?</h2>
+
+  <div class='searchbox ml-5 mb-2 is-responsive'>
+    <p class='control has-icons-left'>
+      <input class='input' type='text' placeholder='Search for animals here!'>
+      <span class='icon is-small is-left'>
+        <i class='fa-solid fa-otter'></i>
+      </span>
+    </p>
+  </div>
+
+  <section class='search-button'>
+    <button class='button has-text-weight-semibold is-responsive is-hovered ml-5 mb-5'>Search</button>
+  </section>
+
+  <div class='columns ml-3'>
+    <div class='column'>
+      <img id="animal-image" src="" alt="Animal image">
+      <span class='title is-size-3'>Animal Name</span><br>
+      <span class='subtitle mb-5 is-italic is-size-4'>Scientific Name</span>
     </div>
-
-    <section class='search-button'>
-      <button class='button has-text-weight-semibold is-responsive is-hovered ml-5 mb-5'>Search</button>
-    </section>
-
-    <div class='columns ml-3'>
-      <div class='column'>
-        <img id="animal-image" src="" alt="Animal image">
-        <span class='title is-size-3'>Animal Name</span><br>
-        <span class='subtitle mb-5 is-italic is-size-4'>Scientific Name</span>
-      </div>
-      <div class='column'>
-        <span class='information is-size-4 has-text-weight-semibold has-text-black'>Information about this animal goes here.</span>
-      </div>
+    <div class='column'>
+      <span class='information is-size-4 has-text-weight-semibold has-text-black'>Information about this animal goes
+        here.</span>
     </div>
+  </div>
+
+  <div id="searchHistory-container">
+    <h2>Search History</h2>
+    <div id="searchHistory"></div>
+  </div>
 
 </body>
 
