@@ -7,28 +7,24 @@ style: 'mapbox://styles/mapbox/streets-v12',
 center: [-78.644257 ,35.787743 ],
 zoom: 4
 });
-
- // adding a navigation bar from point A to point B
-const nav = new mapboxgl.NavigationControl()
-map.addControl(nav)
-
-var directions = new MapboxDirections({
-  accessToken: mapboxgl.accessToken
-})
-map.addControl(directions, "top-left")
-
 // adding search MAPBOX customize for all searches 
 map.addControl(
   new MapboxGeocoder({
   accessToken: mapboxgl.accessToken,
   mapboxgl: mapboxgl
-})
+}),
 );
 
+ // adding a navigation bar from point A to point B
+const nav = new mapboxgl.NavigationControl()
+// map.addControl(nav)
+var directions = new MapboxDirections({
+  accessToken: mapboxgl.accessToken
+})
+map.addControl(directions, "top-left")
 
 
 
-  // create an array of marker objects
   var markers = [
   {
     coordinates: [-99.69058, 32.43943],
@@ -39,11 +35,6 @@ map.addControl(
     coordinates: [-75.13114, 39.94626],
     title: 'Adventure Aquarium, N.J',
     website: 'https://www.adventureaquarium.com/'
-  },
-  {
-    coordinates: [-98.13687, 18.93741],
-    title: 'Africam Safari Park, Mexico',
-    website: 'https://africamsafari.com/'
   },
   {
     coordinates: [-81.54138, 41.07872],
