@@ -4,6 +4,11 @@
     --box-shadow: lightgrey;
     --hover: white;
     --zoo-banner: green;
+    --body: darkgrey;
+}
+
+body {
+    background-color: var(--body);
 }
 
 #header {
@@ -128,8 +133,8 @@
     #aquariums {
         width: 45vw;
         height: 50vh;
-        background-size: 1100px;
-        background-position: 20px 700px;
+        background-size: 1300px;
+        background-position: 0px 800px;
     }
 
     #zoos {
