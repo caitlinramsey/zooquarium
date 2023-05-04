@@ -14,20 +14,23 @@ Overall, the web application is a comprehensive and user-friendly platform that 
 
 ## Technologies Used
 
-- Multiple access to APIs:
-
-  - Animals: https://api-ninjas.com/api/animals
-  - Pixabay: https://pixabay.com/api/docs/
-  - MapBox: https://api.mapbox.com/
-
 - Local Storage
 - FontAwesome
 - Bulma CSS
 - JavaScript
+- Multiple access to APIs:
+
+  - <a href="https://api-ninjas.com/api/animals" target="_blank">Click here</a> to view the animals API.
+  - <a href="https://pixabay.com/api/docs/" target="_blank">Click here</a> to view the Pixabay API.
+  - <a href="https://api.mapbox.com/" target="_blank">Click here</a> to view the MapBox API.
 
 ## Screenshot
 
+![Alt text](assets/images/Project1SS.PNG)
+
 ## Link to deployed site
+
+<a href="https://caitlinramsey.github.io/zoos-and-aquariums/" target="_blank">Click here</a> to access Zooquarium's deployed site.
 
 ## Credits
 
