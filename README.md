@@ -1,9 +1,10 @@
 Have a quality README (with unique name, description,
 technologies used, screenshot, and link to deployed application).
 
-# Zooquarium
+# 🦁Zooquarium🐠
 
 ## Description
+
 The web application we envision is a user-friendly platform that allows animal enthusiasts to easily search for specific animals and find nearby zoos that have them. Our application has a simple and intuitive interface that allows users to enter a search query for an animal they are interested in.
 
 Once the user has entered their search query, the application would return an image and list of results, with each result containing information about the animal. Each search input that is entered by the user will be stored; this will allow users to easily switch between previously searched information with ease.
@@ -16,10 +17,10 @@ Overall, the web application is a comprehensive and user-friendly platform that 
 
 ## Screenshot
 
+## Link to deployed site
+
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+There were many moving parts in this project. Our team worked together diligently to ensure that we had a working application that was user-friendly and fun to create.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+In order to meet our project goals, we worked together to work through our obstacles. We also employed the assistance of out instructor and TAs in the bootcamp. A majority of help came from viewing and reading through online materials from MDN, W3Schools, Stackoverflow, and API documentation.
