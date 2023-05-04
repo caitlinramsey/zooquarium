@@ -355,7 +355,95 @@ body {
     }
 }
 
+@media screen and (max-width: 375px) {
 
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 1500px;
+        background-position: -620px 0px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 50rem;
+    }
+
+    .cards {
+        align-content: center;
+        display: block;
+        margin-left: 1rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 650px;
+        background-position: -170px 590px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 800px;
+        background-position: -180px 600px;
+    }
+
+    #map {
+        height: 40vh;
+        width: 90vw;
+        margin-left: 1rem;
+      }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #header {
+        background-image: url(../images/african-grey.jpg);
+        background-size: 1500px;
+        background-position: -620px 0px;
+        background-repeat: repeat;
+        background-color: none;
+        font-family: Lobster, cursive;
+        padding-bottom: 50rem;
+    }
+
+    .cards {
+        align-content: center;
+        display: block;
+        margin-left: 1rem;
+    }
+
+    #aquariums {
+        width: 90vw;
+        height: 50vh;
+        background-size: 650px;
+        background-position: -220px 590px;
+        margin-bottom: 2rem;
+    }
+
+    #zoos {
+        width: 90vw;
+        height: 50vh;
+        background-size: 750px;
+        background-position: -200px 600px;
+    }
+
+    #map {
+        height: 40vh;
+        width: 90vw;
+        margin-left: 1rem;
+      }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 280px) {
 
