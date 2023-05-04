@@ -7,23 +7,20 @@ const map = new mapboxgl.Map({
   center: [-78.644257, 35.787743],
   zoom: 4,
 });
-
-// adding a navigation bar from point A to point B
-const nav = new mapboxgl.NavigationControl();
-map.addControl(nav);
-
-var directions = new MapboxDirections({
-  accessToken: mapboxgl.accessToken,
-});
-map.addControl(directions, "top-left");
-
-// adding search MAPBOX customize for all searches
+// adding search MAPBOX customize for all searches 
 map.addControl(
   new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl,
-  })
+  accessToken: mapboxgl.accessToken,
+  mapboxgl: mapboxgl
+}),
 );
+
+ // adding a navigation bar from point A to point B
+const nav = new mapboxgl.NavigationControl()
+var directions = new MapboxDirections({
+  accessToken: mapboxgl.accessToken
+})
+map.addControl(directions, "top-left")
 
 // create an array of marker objects
 var markers = [
