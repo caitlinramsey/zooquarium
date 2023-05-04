@@ -24,7 +24,8 @@ async function searchAnimals() {
       "https://pixabay.com/api?key=" +
         apiKey +
         "&q=" +
-        encodeURIComponent(searchInput)
+        encodeURIComponent(searchInput),
+      { mode: "no-cors" } // add no-cors mode here
     )
       .then((res) => res.json())
       .then((data) => data.hits);
