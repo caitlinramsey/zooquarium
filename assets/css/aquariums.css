@@ -1,6 +1,7 @@
 :root {
     --header-text-color: aqua;
     --box-shadow: lightgrey;
+    --hover: lightblue;
 }
 
 * {
@@ -23,11 +24,6 @@ html {
     font-family: Lobster, cursive;
 }
 
-#searchHistory {
-    display: flex;
-    flex-direction: column;
-}
-
 .nav {
     display: flex;
 }
@@ -46,5 +42,24 @@ a {
 
 #animal-image {
     display: block;
+}
+
+#searchHistory {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--header-text-color);
+    margin-left: 1.5rem;
+    padding: .5rem;
+    border: none;
+    border-radius: .2rem;
+    margin-bottom: .5rem;
+}
+
+button:hover {
+   background-color: var(--hover);
+   cursor: pointer;
 }
  
