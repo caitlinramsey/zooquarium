@@ -25,7 +25,7 @@ async function searchAnimals() {
         apiKey +
         "&q=" +
         encodeURIComponent(searchInput),
-      { mode: "no-cors" } // add no-cors mode here
+      { mode: "cors" } // added no-cors mode here
     )
       .then((res) => res.json())
       .then((data) => data.hits);
