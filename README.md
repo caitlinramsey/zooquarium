@@ -1,77 +1,36 @@
-Have a quality README (with unique name, description,
-technologies used, screenshot, and link to deployed application).
-
-
-
-
-
-
-
-# Zoos and Aquariums
+# Zooquarium
 
 ## Description
-This application is intended to encourage both those who are animal enthusiasts and those who are novice learners, to explore animals on interest. Our team wanted to provide an application that would allow users to search for an animal of interest, as well as allow users to search for a zoo near them. 
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+The web application we envision is a user-friendly platform that allows animal enthusiasts to easily search for specific animals and find nearby zoos that have them. Our application has a simple and intuitive interface that allows users to enter a search query for an animal they are interested in.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Once the user has entered their search query, the application would return an image and list of results, with each result containing information about the animal. Each search input that is entered by the user will be stored; this will allow users to easily switch between previously searched information with ease.
 
-## Table of Contents (Optional)
+The application also uses geolocation technology to determine the user's location, making it easy to find nearby zoos. Each zoo that is provided are part of the Association of Zoos and Aquariums; an organization that ensures the welfare of every animal. Users also have the option to enter their location manually, or search for zoos in a specific region or city. Users can view a popup above the zoo of choice, providing a hyperlink to that specific zoo. This allows users to easily access detailed information about the zoo, including its location, hours of operation, admission fees, and a map showing the exact location of the zoo.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+To make it even more convenient, the application would offer a feature that would allow users to map directions to the selected zoo directly from the site, eliminating the need to switch between the application and a separate map application. The directions will be provided, and users could choose their preferred mode of transportation, such as driving, walking, or public transit.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+Overall, the web application is a comprehensive and user-friendly platform that would make it easy for animal enthusiasts to find and visit their favorite animals at nearby accredited zoos.
 
-## Installation
+## Technologies Used
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+- Multiple access to APIs:
 
-## Usage
+  - Animals: https://api-ninjas.com/api/animals
+  - Pixabay: https://pixabay.com/api/docs/
+  - MapBox: https://api.mapbox.com/
 
-Provide instructions and examples for use. Include screenshots as needed.
+- Local Storage
+- FontAwesome
+- Bulma CSS
+- JavaScript
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Screenshot
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+## Link to deployed site
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+There were many moving parts in this project. Our team worked together diligently to ensure that we had a working application that was user-friendly and fun to create.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+In order to meet our project goals, we worked together to work through our obstacles. We also employed the assistance of out instructor and TAs in the bootcamp. A majority of help came from viewing and reading through online materials from MDN, W3Schools, Stackoverflow, and API documentation.
