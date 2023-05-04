@@ -1,7 +1,4 @@
-Have a quality README (with unique name, description,
-technologies used, screenshot, and link to deployed application).
-
-# 🦁Zooquarium🐠
+# Zooquarium
 
 ## Description
 
@@ -14,6 +11,19 @@ The application also uses geolocation technology to determine the user's locatio
 To make it even more convenient, the application would offer a feature that would allow users to map directions to the selected zoo directly from the site, eliminating the need to switch between the application and a separate map application. The directions will be provided, and users could choose their preferred mode of transportation, such as driving, walking, or public transit.
 
 Overall, the web application is a comprehensive and user-friendly platform that would make it easy for animal enthusiasts to find and visit their favorite animals at nearby accredited zoos.
+
+## Technologies Used
+
+- Multiple access to APIs:
+
+  - Animals: https://api-ninjas.com/api/animals
+  - Pixabay: https://pixabay.com/api/docs/
+  - MapBox: https://api.mapbox.com/
+
+- Local Storage
+- FontAwesome
+- Bulma CSS
+- JavaScript
 
 ## Screenshot
 
