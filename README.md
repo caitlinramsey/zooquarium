@@ -30,7 +30,7 @@ Overall, the web application is a comprehensive and user-friendly platform that 
 
 ## Link to deployed site
 
-<a href="https://caitlinramsey.github.io/zoos-and-aquariums/" target="_blank">Click here</a> to access Zooquarium's deployed site.
+<a href="https://caitlinramsey.github.io/zooquarium/" target="_blank">Click here</a> to access Zooquarium's deployed site.
 
 ## Credits
 
